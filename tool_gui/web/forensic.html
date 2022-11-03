@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="forensic analysis">
+    <meta name="author" content="stephan escher">
+
+    <title>Công cụ Hỗ trợ Điều tra số</title>
+
+    <!-- CSS Import -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dedastyle.css" rel="stylesheet">
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <!-- EEL -->
+    <script type='text/javascript' src='/eel.js'></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper"></div>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid" id="content">
+                <a href="#menu-toggle" id="menu-toggle"><i class="fas fa-ellipsis-h"></i></a>
+                <hr><h3> Điều tra thông tin <i class="fas fa-search"></i></h3><hr>
+                <br>
+                <div class="card" id ="contentheader">
+                    <div class="card-body">
+                        <form id="headerform">
+                          <div class="form-group">
+                            <input id="file_selector" class="form-control" placeholder="Nhập đường dẫn thư mục hoặc tệp ảnh cần phân tích"></input>
+<!--                              <a href="#" class="btn btn-secondary" data-dismiss="alert" onclick="getForensicFiles()"><i class="fas fa-search"></i> Phân tích</a>-->
+                             <div id="input-container">
+
+                             </div>
+                          </div>
+                          <a href="#" class="btn btn-secondary" onclick="addField()"><i class="fas fa-folder-plus"></i> Thêm đầu vào</a>
+                          <a href="#" class="btn btn-secondary" data-dismiss="alert" onclick="getForensicFiles()"><i class="fas fa-search"></i> Phân tích</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Ext -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jspdf.min.js"></script>
+    <script src="js/jspdf.plugin.autotable.min.js"></script>
+    <script src="js/dom-to-image.min.js"></script>
+    <script src="js/deda.js"></script>
+
+</body>
+
+</html>

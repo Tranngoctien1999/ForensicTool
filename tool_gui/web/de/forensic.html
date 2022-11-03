@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Forensische Analyse">
+    <meta name="author" content="stephan escher">
+
+    <title>Deda Toolkit</title>
+
+    <!-- CSS Import -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/dedastyle.css" rel="stylesheet">
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <!-- EEL -->
+    <script type='text/javascript' src='/eel.js'></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper"></div>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid" id="content">
+                <a href="#menu-toggle" id="menu-toggle"><i class="fas fa-ellipsis-h"></i></a>
+                <a class="language" href="../forensic.html"> English </a>
+                <hr><h3> Forensische Analyse <i class="fas fa-search"></i></h3><hr>
+                <br>
+                <div class="card" id ="contentheader">
+                    <div class="card-body">
+                        Dieser Teil ermöglicht die Extraktion und Dekodierung von Tracking Dots aus gescannten Ausdrucken. Kopieren Sie den Pfad des gescannten Ausdruckes
+                        den Sie analysieren möchten in das Textfeld und klicken Sie auf "Dokument analysieren". Bei Eingabe eines Ordnerpfades werden alle Bilddateien im Ordner nach Trackingdots analysiert.
+                        <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="Dateipfad kopieren"
+                        data-content="<u>Windows</u><ul><li>Shift+Rechtsklick auf Datei</li><li>Pfad kopieren</li><li>Strg+v im Textfeld</ul></li>
+                        <u>Linux</u><ul><li>Strg+c auf Datei</li><li>Strg+v im Textfeld</li></ul>"><i class="far fa-lightbulb"></i></i></a>
+                        <br><br>
+                        <form id="headerform">
+                          <div class="form-group">
+                            <input id="file_selector" class="form-control" placeholder="Geben Sie einen einzelnen Datei- oder Ordnerpfad ein."></input>
+                             <div id="input-container"></div>
+                          </div>
+                          <a href="#" class="btn btn-secondary" onclick="addField()"><i class="fas fa-folder-plus"></i> Eingabefeld hinzufügen</a>
+                          <a href="#" class="btn btn-secondary" data-dismiss="alert" onclick="getForensicFiles()"><i class="fas fa-search"></i> Dokument analysieren</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Ext -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jspdf.min.js"></script>
+    <script src="../js/jspdf.plugin.autotable.min.js"></script>
+    <script src="../js/dom-to-image.min.js"></script>
+    <script src="../js/deda.js"></script>
+
+</body>
+
+</html>

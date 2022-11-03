@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Scan Anonymisierung">
+    <meta name="author" content="stephan escher">
+
+    <title>Deda Toolkit</title>
+
+    <!-- CSS Import-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/dedastyle.css" rel="stylesheet">
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <!-- EEL -->
+    <script type='text/javascript' src='/eel.js'></script>
+
+</head>
+
+<body>
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper"></div>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid" id="content">
+                <a href="#menu-toggle" id="menu-toggle"><i class="fas fa-ellipsis-h"></i></a><a class="language" href="../scananon.html"> English</a>
+                <hr><h3> Scan Anonymisierung <i class="fas fa-cut"></i></h3><hr>
+                <br>
+                <div class="card" id="contentheader">
+                    <div class="card-body">
+                        Dieser Teil ermöglicht die Anonymisierung eines gescannten Ausdrucks. Kopieren Sie den Pfad des gescannten Ausdrucks, den Sie anonymisieren möchten,
+                        in das Textfeld und klicken Sie auf "Dokument anonymisieren". Das anonymisierte Dokument wird im gleichen Verzeichnis gespeichert (dokumentname_anon).
+                        <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-html="true" title="Dateipfad kopieren"
+                        data-content="<u>Windows</u><ul><li>Shift+Rechtsklick auf Datei</li><li>Pfad kopieren</li><li>Strg+v im Textfeld</ul></li>
+                        <u>Linux</u><ul><li>Strg+c auf Datei</li><li>Strg+v im Textfeld</li></ul>"><i class="far fa-lightbulb"></i></i></a>
+                        <br><br>
+                        <form id="headerform">
+                            <div class="form-group">
+                                <input id="file_selector" class="form-control" placeholder='Dateipfad des gescannten Ausdruckes eingeben'></input>
+                            </div>
+                            <a href="#" class="btn btn-secondary" onclick='anonymizeScan()'><i class="fas fa-cut"></i> Dokument anonymisieren</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Ext-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/deda.js"></script>
+
+</body>
+
+</html>
